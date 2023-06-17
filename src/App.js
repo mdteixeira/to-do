@@ -6,24 +6,6 @@ import { useState } from 'react';
 function App() {
     const [showAddTask, setShowAddTask] = useState(false);
     const [tasks, setTasks] = useState([
-        {
-            id: 1,
-            text: 'Criar Aplicativo',
-            day: 'Dia 5 de Fevereiro - 14:40',
-            reminder: true,
-        },
-        {
-            id: 2,
-            text: 'Assistir Filmes',
-            day: 'Dia 5 de Fevereiro - 14:40',
-            reminder: true,
-        },
-        {
-            id: 3,
-            text: 'Estudar React',
-            day: 'Dia 5 de Fevereiro - 14:40',
-            reminder: true,
-        },
     ]);
 
     const addTask = (task) => {
