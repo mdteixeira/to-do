@@ -40,7 +40,7 @@ function App() {
                     onToggle={mudarReminder}
                 />
             ) : (
-                'Você não tem tarefas, pode tirar férias!'
+               <p className='noTasks'>Você não tem tarefas! 🎉</p>
             )}
         </div>
     );

@@ -15,9 +15,10 @@ body {
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    border: 1px solid steelblue;
-    padding: 30px;
-    border-radius: 5px;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1.2rem 0 #eee;
 }
 
 .header {
@@ -55,7 +56,9 @@ body {
 }
 
 .task {
-    background: #f4f4f4;
+    background: #fff;
+    box-shadow: 0 0.1rem 0.2rem 0 #eee;
+    border-radius: 0 1rem 1rem 0;
     margin: 5px;
     padding: 10px 20px;
     cursor: pointer;
@@ -88,6 +91,10 @@ body {
     margin: 5px;
     padding: 3px 7px;
     font-size: 17px;
+    border: silver;
+    border-radius: 0.5rem;
+    padding-left: 1.2rem;
+    box-shadow: 0 0.1rem 0.2rem 0 #eee;
 }
 
 .form-control-check {
@@ -100,6 +107,7 @@ body {
     flex: 1;
 }
 .form-control-check input {
+    box-shadow: none;
     flex: 2;
     height: 20px;
 }
@@ -107,4 +115,28 @@ body {
 footer {
     margin-top: 30px;
     text-align: center;
+}
+
+.noTasks {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 120%;
+}
+
+.btn:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+button:hover {
+    background-color: rgb(0, 159, 80) !important;
+}
+
+#warning {
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+.show {
+    display: block !important;
 }

@@ -4,14 +4,16 @@ const AddTask = ({ onAdd }) => {
     const [text, setText] = useState('');
     const [day, setDay] = useState('');
     const [reminder, setReminder] = useState(false);
+    const warning = document.getElementById('warning')
 
     const onSubmit = (e) => {
         e.preventDefault();
 
         if (!text) {
-            alert('Por favor, adicione uma tarefa!');
+            warning.classList = 'show'
             return;
         }
+        warning.classList = ''
 
         onAdd({ text, day, reminder });
 
@@ -30,6 +32,7 @@ const AddTask = ({ onAdd }) => {
                     value={text}
                     onChange={(e) => setText(e.target.value)}
                 />
+                <p id="warning">Insira a tarefa!</p>
             </div>
             <div className="form-control">
                 <label>Dia e Horário</label>
