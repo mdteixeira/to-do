@@ -140,3 +140,12 @@ button:hover {
 .show {
     display: block !important;
 }
+
+svg:hover {
+    filter: saturate(50%)
+}
+
+input::placeholder {
+    font-family: 'Poppins' !important;
+    text-decoration: none;
+}
